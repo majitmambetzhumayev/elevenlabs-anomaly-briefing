@@ -1,0 +1,68 @@
+{
+  "report_id": "FIN-2026-Q2-0047",
+  "generated_at": "2026-06-29T08:00:00Z",
+  "municipality": "City of Riverside",
+  "fiscal_period": "Q2 2026",
+  "anomalies": [
+    {
+      "id": "ANO-001",
+      "type": "budget_overrun",
+      "severity": "high",
+      "department": "Public Works",
+      "description": "Infrastructure maintenance spend exceeded approved budget by 34%",
+      "amount_flagged": 142500.00,
+      "budget_limit": 423000.00,
+      "actual_spend": 565500.00,
+      "detected_at": "2026-06-15T14:22:00Z"
+    },
+    {
+      "id": "ANO-002",
+      "type": "duplicate_payment",
+      "severity": "high",
+      "department": "Finance",
+      "description": "Vendor invoice #INV-8821 paid twice to Acme Contractors LLC within 72 hours",
+      "amount_flagged": 28750.00,
+      "vendor": "Acme Contractors LLC",
+      "invoice_ref": "INV-8821",
+      "detected_at": "2026-06-18T09:05:00Z"
+    },
+    {
+      "id": "ANO-003",
+      "type": "threshold_exceeded",
+      "severity": "medium",
+      "department": "Parks & Recreation",
+      "description": "Single purchase order exceeded $10,000 authorization threshold without prior approval",
+      "amount_flagged": 14200.00,
+      "approval_threshold": 10000.00,
+      "detected_at": "2026-06-20T11:45:00Z"
+    },
+    {
+      "id": "ANO-004",
+      "type": "irregular_pattern",
+      "severity": "medium",
+      "department": "IT",
+      "description": "15 transactions to the same vendor processed on non-business days over 30-day window",
+      "amount_flagged": 9340.00,
+      "vendor": "TechSoft Solutions",
+      "transaction_count": 15,
+      "detected_at": "2026-06-22T16:30:00Z"
+    },
+    {
+      "id": "ANO-005",
+      "type": "missing_documentation",
+      "severity": "low",
+      "department": "Human Resources",
+      "description": "3 expense reimbursements processed without required receipt attachments",
+      "amount_flagged": 1875.00,
+      "transaction_count": 3,
+      "detected_at": "2026-06-25T10:10:00Z"
+    }
+  ],
+  "summary_stats": {
+    "total_anomalies": 5,
+    "high_severity": 2,
+    "medium_severity": 2,
+    "low_severity": 1,
+    "total_amount_flagged": 196665.00
+  }
+}
